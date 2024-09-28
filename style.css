@@ -1,0 +1,540 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #171c28;
+}
+.navbar {
+  /* background-color: blue; */
+  padding: 20px;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.sign {
+  font-family: "Dancing Script", cursive;
+  font-size: 5vmin;
+}
+.arrow {
+  font-size: 10vmin;
+  color: #551988;
+}
+.navlinks a {
+  /* background-color: aquamarine; */
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 3vmin;
+}
+.navlinks a:hover {
+  background-color: #55198b;
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bio {
+  padding: 4rem;
+}
+.bio h1,
+p {
+  padding: 1rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  /* background-color: chocolate; */
+}
+.bio h1 {
+  font-size: 4rem;
+}
+.bio p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  word-spacing: 0.5rem;
+}
+.vector1 img {
+  background-image: url(vecteezy_luxury-sparkling-golden-splash-waves-isolated-on-a_27182760.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 80vmin;
+  height: 70vmin;
+}
+.icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.icons i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  font-size: 2rem;
+  margin-left: 1rem;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.icons a {
+  text-decoration: none;
+}
+.icons i:hover {
+  background-color: black;
+}
+.fa-linkedin {
+  color: #0e76a8;
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-envelope {
+  color: #ea4335;
+}
+.fa-github {
+  color: #333333;
+}
+.icons .fa-phone {
+  font-size: 1.5rem;
+  color: cadetblue;
+}
+.bt {
+  /* width: 30vw; */
+  /* background-color: yellow; */
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+.bt button {
+  cursor: pointer;
+  margin-left: 1rem;
+  padding: 1rem;
+  width: auto;
+  height: auto;
+  background-color: #551988;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.bt button:hover {
+  margin-top: -0.5rem;
+  color: #551988;
+  background-color: white;
+}
+.whatido {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  align-items: center;
+}
+.vector2 img {
+  width: 40rem;
+  height: 35rem;
+  /* background-color: aqua; */
+}
+.ido {
+  /* background-color: #EA4335; */
+  height: 35rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.ido h2 {
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+}
+.ido .idobio {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+.idoicons {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  color: gray;
+  gap: 2rem;
+}
+.idoicons i:hover {
+  color: #551988;
+}
+.idoicons i {
+  font-size: 4rem;
+}
+.ido p {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+}
+.point {
+  padding-right: 0.5rem;
+  color: yellow;
+}
+.education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10vh;
+  /* text-align: left; */
+  font-family: "Montserrat", sans-serif;
+  /* background-color: aqua; */
+  height: 30rem;
+  padding: 2rem 0 0 5rem;
+  word-spacing: 0.2rem;
+  color: white;
+  /* background-color: #0E76A8; */
+  gap: 2rem;
+}
+.edu-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  /* background-color: #EA4335; */
+  width: 90vw;
+  height: 450px;
+}
+.education h1 {
+  font-size: 50px;
+}
+
+.line {
+  width: 75vw;
+  height: 0.3vh;
+  background-color: gray;
+
+  transition: 1s;
+}
+.education:hover {
+  .line {
+    width: 85vw;
+    background-color: skyblue;
+  }
+}
+.logo img {
+  /* padding:1rem 0 2rem 1rem; */
+  width: 150px;
+  height: 150px;
+}
+.exp {
+  color: white;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+  align-items: center;
+  /* height: 120vh; */
+  /* background-color: #EA4335; */
+  font-family: "Montserrat", sans-serif;
+}
+.exp h1 {
+  font-size: 3rem;
+  text-align: left;
+}
+.expCard {
+  /* background-color: aqua; */
+  width: 90vw;
+  /* height: 90vh; */
+  display: flex;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.card {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 27vw;
+  height: 80vh;
+  /* background-color: brown; */
+
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  border: 2px solid gray;
+}
+
+.cardlogo img {
+  width: 7rem;
+  height: 7rem;
+}
+.achieve {
+  /* padding: 5rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  font-family: "Montserrat", sans-serif;
+}
+.achieve .h1 {
+  padding: 5rem 0rem 5rem 5rem;
+  font-size: 3rem;
+  color: white;
+}
+.achcard img {
+  width: 35rem;
+  height: 22rem;
+  opacity: 0.5;
+  transition: 1s ease-in;
+}
+.achcard img:hover {
+  transform: scale(1.2);
+}
+.achievecard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: #0e76a8; */
+  width: 100%;
+  height: 50rem;
+
+  flex-wrap: wrap;
+}
+.reach {
+  margin: 15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  /* background-color: #55198b; */
+  margin: 10rem 5rem 5rem 5rem;
+}
+.reachcon {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.reachcon h2 {
+  font-size: 3rem;
+  color: white;
+}
+.reachcon h3 {
+  font-size: 1.2rem;
+  color: rgb(160, 158, 158);
+}
+.reachimg img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  border: 3px solid #551988;
+}
+.footer {
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
+
+/* Responsiveness for mobile screen */
+
+@media (max-width: 500px) {
+  /* *{
+        padding: 0;
+        margin: 0;
+    } */
+  .content h1 {
+    font-size: 2rem;
+  }
+  .content p {
+    font-size: 1rem;
+  }
+  .bio {
+    padding: 0;
+    margin: 0;
+  }
+  .vector1 img{
+    width: 22rem;
+    height: 20rem;
+    padding: 0;
+    margin: 0;
+    
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: #0e76a8; */
+    width: 90%;
+  }
+  .navlinks {
+    display: none;
+  }
+  .content {
+    flex-direction: column-reverse;
+  }
+
+  .whatido {
+    margin-top: 8vh;
+    padding: 0;
+        
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    /* width: 10vw; */
+  }
+  .ido {
+    /* background-color: #EA4335; */
+    height: 35rem;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .ido .idobio{
+    font-size: 1rem;
+  }
+  .vector2 img {
+    width: 100%;
+    height: 50%;
+    
+  }
+  .expCard {
+    /* background-color: aqua; */
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .education {
+    justify-content: space-between;
+    height: auto;
+    padding: 2rem 0 0rem 0rem;
+    word-spacing: 0.2rem;
+    color: white;
+  }
+  .edu-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 2rem;
+    /* background-color: #0e76a8; */
+    /* width: 90vw; */
+    height: 39rem;
+  }
+  .edu-1 p {
+    font-size: 1.2rem;
+  }
+  .card {
+    padding: 2rem 0;
+    width: 90vw;
+    margin-top: 2rem;
+    height: auto;
+  }
+  .education :nth-child(2) {
+    text-align: left;
+  }
+  .achieve {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .achieve .h1 {
+    padding: 5rem 0rem 5rem 5rem;
+    font-size: 3rem;
+    color: white;
+  }
+  .achcard img {
+    width: 20rem;
+    height: 15rem;
+    opacity: 0.5;
+    transition: 1s ease-in;
+    margin-top: 2rem;
+  }
+  .achcard img:hover {
+    transform: scale(1.2);
+  }
+  .achievecard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #0e76a8; */
+    width: 100%;
+    height: 50rem;
+
+    flex-wrap: wrap;
+  }
+  .reach {
+    justify-content: space-evenly;
+    margin: 25rem 0 0 0;
+    width: 90%;
+    flex-direction: column;
+    /* background-color: #ea4335; */
+    height: 40rem;
+  }
+  .reach h2 {
+    font-size: 2.5rem;
+  }
+  .footer {
+    margin-bottom: 2rem;
+  }
+  .bt {
+    /* width: 30vw; */
+    /* background-color: yellow; */
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+  }
+  .exp {
+    align-items: flex-start;
+  }
+  .exp h1 {
+    font-size: 3rem;
+    text-align: left;
+  }
+  .achieve {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-items: flex-start;
+    font-family: "Montserrat", sans-serif;
+  }
+  .achieve .h1 {
+    padding: 5rem 0rem 2rem 1.5rem;
+    
+    font-size: 3rem;
+    color: white;
+  }
+}
