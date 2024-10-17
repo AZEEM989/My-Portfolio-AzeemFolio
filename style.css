@@ -53,6 +53,15 @@ p {
 }
 .bio h1 {
   font-size: 4rem;
+  animation: slide_in 2s;
+}
+@keyframes slide_in {
+  from{
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translateX(0%);
+  }
 }
 .bio p {
   font-size: 1.5rem;
