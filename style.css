@@ -2,6 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 * {
+  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -73,7 +74,7 @@ p {
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
-  width: 80vmin;
+  max-width: 80vmin;
   height: 70vmin;
 }
 .icons {
@@ -275,9 +276,8 @@ p {
 }
 .card {
   display: flex;
-
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 27vw;
   height: 80vh;
@@ -308,7 +308,7 @@ p {
   color: white;
 }
 .achcard img {
-  width: 35rem;
+  max-width: 35rem;
   height: 22rem;
   opacity: 0.5;
   transition: 1s ease-in;
@@ -364,7 +364,7 @@ p {
 
 /* Responsiveness for mobile screen */
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   /* *{
         padding: 0;
         margin: 0;
@@ -462,10 +462,18 @@ p {
     font-size: 1.2rem;
   }
   .card {
-    padding: 2rem 0;
-    width: 90vw;
+    padding: 1rem 0;
+    width: 80vw;
     margin-top: 2rem;
+    gap: 1rem;
     height: auto;
+   /* background-color: aqua; */
+  }
+  .card h2{
+    font-size: 1rem;
+  }
+  .card .Face{
+    font-size: 1.4rem;
   }
   .education :nth-child(2) {
     text-align: left;
@@ -546,4 +554,11 @@ p {
     font-size: 3rem;
     color: white;
   }
+  
+  .exdetails p{
+     text-align: left;
+     
+     color:goldenrod;
+  }
+  
 }
