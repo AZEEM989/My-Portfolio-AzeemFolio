@@ -74,7 +74,7 @@ p {
 .yellow {
   color: #ffc83d;
 }
-.vector1 img {
+.vector1 img{
   background-image: url(vecteezy_luxury-sparkling-golden-splash-waves-isolated-on-a_27182760.png);
   background-size: contain;
   background-position: bottom;
@@ -82,6 +82,7 @@ p {
   max-width: 80vmin;
   height: 70vmin;
 }
+
 .icons {
   display: flex;
   justify-content: flex-start;
@@ -207,7 +208,7 @@ p {
   gap: 2rem;
 }
 .idoicons i:hover {
-  color: #551988;
+  color: #ffc83d;
 }
 .idoicons i {
   font-size: 4rem;
@@ -405,6 +406,7 @@ p {
     padding: 0;
     margin: 0;
   }
+
   .vector1 img {
     width: 22rem;
     height: 20rem;
@@ -474,6 +476,10 @@ p {
     color: white;
     /* background-color:cadetblue; */
   }
+  .education:hover .line {
+    width: 85vw;
+    background-color: skyblue;
+ }
   .logo img{
     height: 100px;
     width: 100px;
@@ -524,7 +530,7 @@ p {
   .achieve h2 {
     /* display: none; */
     margin-left: 2rem;
-    font-size: 35px;
+    font-size: 1.8rem;
     color: white;
   }
   .achcard img {
@@ -575,8 +581,8 @@ p {
     height: auto;
     align-items: flex-start;
   }
-  .exp h1 {
-    font-size: 3rem;
+  .exp h1 ,.bio h1{
+    font-size: 2rem;
     text-align: left;
   }
   .achieve {
