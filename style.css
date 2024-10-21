@@ -2,7 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 * {
-  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -19,6 +18,8 @@ body {
   color: white;
 }
 .sign {
+  display: flex;
+  align-items: center;
   font-family: "Dancing Script", cursive;
   font-size: 5vmin;
 }
@@ -49,7 +50,7 @@ body {
 p {
   padding: 1rem;
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   /* background-color: chocolate; */
 }
 .bio h1 {
@@ -57,17 +58,21 @@ p {
   animation: slide_in 2s;
 }
 @keyframes slide_in {
-  from{
+  from {
     transform: translateX(-100%);
   }
-  to{
+  to {
     transform: translateX(0%);
   }
 }
 .bio p {
   font-size: 1.5rem;
   line-height: 2.5rem;
-  word-spacing: 0.5rem;
+  word-spacing: 0.1rem;
+  text-align: justify;
+}
+.yellow {
+  color: #ffc83d;
 }
 .vector1 img {
   background-image: url(vecteezy_luxury-sparkling-golden-splash-waves-isolated-on-a_27182760.png);
@@ -134,9 +139,9 @@ p {
   width: auto;
   height: auto;
   background-color: #551988;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   border-radius: 10px;
-  
+
   color: white;
   font-weight: 600;
   transition: 0.5s;
@@ -150,10 +155,10 @@ p {
 .bt .resume:hover{
   margin-top: -0.5rem;
   color: white;
-  background-color:#551988;
+  background-color: #551988;
   border: 2px solid white;
 }
-.bt .conme{
+.bt .conme {
   border: 2px solid white;
 }
 .bt .resume{
@@ -166,6 +171,7 @@ p {
   justify-content: space-between;
   /* flex-wrap: wrap; */
   align-items: center;
+  font-family: "Poppins", sans-serif;
 }
 .vector2 img {
   width: 40rem;
@@ -187,11 +193,9 @@ p {
   padding: 1rem;
   text-align: center;
   font-size: 3rem;
-  font-family: "Montserrat", sans-serif;
 }
 .ido .idobio {
   font-size: 1.5rem;
-  font-family: "Montserrat", sans-serif;
 }
 .idoicons {
   text-align: center;
@@ -210,7 +214,6 @@ p {
 }
 .ido p {
   font-size: 1.2rem;
-  font-family: "Montserrat", sans-serif;
 }
 .point {
   padding-right: 0.5rem;
@@ -222,14 +225,14 @@ p {
   justify-content: center;
   align-items: flex-start;
   margin-top: 10vh;
-  /* text-align: left; */
-  font-family: "Montserrat", sans-serif;
-  /* background-color: aqua; */
+
+  font-family: "Poppins", sans-serif;
+
   height: 30rem;
   padding: 2rem 0 0 5rem;
   word-spacing: 0.2rem;
   color: white;
-  /* background-color: #0E76A8; */
+
   gap: 2rem;
 }
 .edu-1 {
@@ -244,7 +247,15 @@ p {
 .education h1 {
   font-size: 50px;
 }
-
+.education .edu-1 button{
+  height: 2rem;
+  width: 8rem;
+  padding: 0.5rem;
+}
+.edu-1 a{
+  text-decoration: none;
+  color: white;
+}
 .line {
   width: 75vw;
   height: 0.3vh;
@@ -394,12 +405,11 @@ p {
     padding: 0;
     margin: 0;
   }
-  .vector1 img{
+  .vector1 img {
     width: 22rem;
     height: 20rem;
     padding: 0;
     margin: 0;
-    
   }
   .main {
     display: flex;
@@ -424,31 +434,30 @@ p {
   }
 
   .whatido {
-    margin-top: 8vh;
+    margin-top: 5vh;
     padding: 0;
-        
+
     display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     /* width: 10vw; */
   }
   .ido {
     /* background-color: #EA4335; */
-    height: 35rem;
-  
+    height: auto;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
   }
-  .ido .idobio{
+  .whatido p {
     font-size: 1rem;
   }
   .vector2 img {
     width: 100%;
     height: 50%;
-    
   }
   .expCard {
     /* background-color: aqua; */
@@ -458,36 +467,48 @@ p {
     flex-wrap: wrap;
   }
   .education {
-    justify-content: space-between;
-    height: auto;
+    margin-top: 4vh;
+    height:70vh;
     padding: 2rem 0 0rem 0rem;
     word-spacing: 0.2rem;
     color: white;
+    /* background-color:cadetblue; */
+  }
+  .logo img{
+    height: 100px;
+    width: 100px;
   }
   .edu-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-top: 2rem;
+    /* display: flex;
+    flex-direction: column; */
+    gap: 0.2rem;
+    
     /* background-color: #0e76a8; */
     /* width: 90vw; */
-    height: 39rem;
+    height: auto;
+  }
+  .edu-1 h2{
+    font-size: 1.3rem;
+  }
+  .edu-1 h3{
+    font-size: 1.1rem;
   }
   .edu-1 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
+ 
   .card {
     padding: 1rem 0;
     width: 80vw;
     margin-top: 2rem;
     gap: 1rem;
     height: auto;
-   /* background-color: aqua; */
+    /* background-color: aqua; */
   }
-  .card h2{
+  .card h2 {
     font-size: 1rem;
   }
-  .card .Face{
+  .card .Face {
     font-size: 1.4rem;
   }
   .education :nth-child(2) {
@@ -565,15 +586,14 @@ p {
   }
   .achieve .h1 {
     padding: 5rem 0rem 2rem 1.5rem;
-    
+
     font-size: 3rem;
     color: white;
   }
-  
-  .exdetails p{
-     text-align: left;
-     
-     color:goldenrod;
+
+  .exdetails p {
+    text-align: left;
+
+    color: goldenrod;
   }
-  
 }
