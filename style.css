@@ -159,13 +159,19 @@ p {
   background-color: #551988;
   border: 2px solid white;
 }
+.bt .resume a:hover{
+  color: white;
+}
 .bt .conme {
   border: 2px solid white;
 }
-.bt .resume{
+.bt .resume {
   background-color: white;
   color: #551988;
   border: 2px solid #551988;
+}
+.bt .resume a{
+  text-decoration: none;
 }
 .whatido {
   display: flex;
