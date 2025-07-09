@@ -2,6 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -48,14 +49,21 @@ body {
 }
 .bio h1,
 p {
+
   padding: 1rem;
   color: white;
+  opacity: 0.7;
   font-family: "Poppins", sans-serif;
   /* background-color: chocolate; */
 }
 .bio h1 {
   font-size: 4rem;
   animation: slide_in 2s;
+}
+.bio h1::first-letter {
+  color: #ffc83d;
+  font-size: 3rem;
+  font-weight: 600;
 }
 @keyframes slide_in {
   from {
