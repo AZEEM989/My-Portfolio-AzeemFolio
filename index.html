@@ -12,145 +12,339 @@
     <title>AzeemFolio || About my journey</title>
     </head>
 <body>
-    <div class="main">
-        <!-- navbar -->
-      <div class="navbar"> 
-        <div class="sign"><span class="arrow"> < </span>Azeem Ur Rehman <span class="arrow">/></span></div>
-        <div class="navlinks">
-            <a href="">Skills</a>
-            <a href="">Work Experiences</a>
-            <a href="">Achievements</a>
-            <a href="">Blogs</a>
-            <a href="https://www.hackerrank.com/profile/azeem_rehman_bt1" target="_blank">HacherRank</a>
-            <a href="">Resume</a>
-            <a href="">Contact Me</a>
-        </div>
-      </div>
-      <!-- bio and vector section -->
-      <div class="content">
-        <div class="bio">
-            <h1>Hi all, I'm  Azeem &#9995</h1>
-            <p>A passionate frontend developer with a degree in <span class="yellow">Biotechnology  (because I thought coding websites would be easier than engineering cells — turns out, both are tricky!)</span>. I specialize in creating responsive, user-friendly websites using<span class="yellow"> HTML, CSS, </span>and <span class="yellow">JavaScript</span>. Always learning and ready for the next challenge! 🚀 having an experience of building <span class="yellow">Web </span>and <span class="yellow">Mobile</span> applications with<span class="yellow"> JavaScript / Reactjs / MySQL</span> and some other cool libraries and frameworks.</p>
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/azeem-ur-rehman-4bb3b7325" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href="mailto:azeemurrehman68@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://github.com/AZEEM989" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="tel:+919528061398" target="_blank"><i class="fa-solid fa-phone"></i></a>
-            </div>
-            <div class="bt">
-                <button class="conme">CONTACT ME</button>
-                <button class="resume"><a href="/AZEEM CV (FED).pdf" target="_blank">MY RESUME</a></button>
-            </div>
-        </div>
-        <div class="vector1"><img src="My Portfolio- Images/vecteezy_3d-male-character-presenting-to-the-right_24785849.png" alt=""></div>
-        </div>
-        <!-- what i do section -->
-         <div class="whatido">
-            <div class="vector2"><img src="My Portfolio- Images/vecteezy_3d-male-character-sitting-on-a-sofa-and-working-on-a-laptop_24785818.png" alt=""></div>
-            <div class="ido">
-                <h2>What I do</h2>
-                
-                <div class="idoicons">
-                    <div><i class="fa-brands fa-html5"></i><br><br>html5</div>
-                    <div><i class="fa-brands fa-css3-alt"></i><br><br>css3 </div>
-                    <div><i class="fa-brands fa-js"></i><br><br>Javascript</div>
-                    <div><i class="fa-solid fa-database"></i><br><br>sql Database</div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <span class="arrow">&lt;</span>
+                    Azeem Ur Rehman
+                    <span class="arrow">/&gt;</span>
                 </div>
-                <p><span class="point">&#9755 Responsive Web Design</span><br>I create visually appealing and fully responsive websites that work seamlessly on any device, from desktop to mobile.</p>
-                <p><span class="point">&#9755 User-Friendly Interfaces</span><br>I focus on building intuitive and smooth user experiences, ensuring that visitors can easily navigate and interact with the site.</p>
-                <p><span class="point">&#9755 Continuous Learning & Innovation</span><br>I’m always updating my skills and staying on top of the latest trends in frontend development to build better, smarter websites.</p>
+                
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="https://www.hackerrank.com/profile/azeem_rehman_bt1" target="_blank">HackerRank</a></li>
+                </ul>
+
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="mobile-menu" id="mobileMenu">
+                    <a href="#home" class="nav-link" onclick="toggleMobileMenu()">Home</a>
+                    <a href="#about" class="nav-link" onclick="toggleMobileMenu()">About</a>
+                    <a href="#education" class="nav-link" onclick="toggleMobileMenu()">Education</a>
+                    <a href="#experience" class="nav-link" onclick="toggleMobileMenu()">Experience</a>
+                    <a href="#achievements" class="nav-link" onclick="toggleMobileMenu()">Achievements</a>
+                    <a href="#contact" class="nav-link" onclick="toggleMobileMenu()">Contact</a>
+                </div>
             </div>
-         </div>
-         <!-- Education section -->
-        <div class="education">
-            <h1>Education</h1>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <div class="hero-text">
+                    <h1>Hi all, I'm Azeem <span class="wave">👋</span></h1>
+                    <p>
+                        A passionate frontend developer with a degree in 
+                        <span class="highlight">Biotechnology (because I thought coding websites would be easier than engineering cells — turns out, both are tricky!)</span>
+                        I specialize in creating responsive, user-friendly websites using 
+                        <span class="highlight">HTML, CSS,</span> and <span class="highlight">JavaScript</span>. 
+                        Always learning and ready for the next challenge! 🚀
+                    </p>
+                    <p>
+                        Having experience building <span class="highlight">Web</span> and 
+                        <span class="highlight">Mobile</span> applications with 
+                        <span class="highlight">JavaScript / React.js / MySQL</span> and other cool libraries and frameworks.
+                    </p>
+
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/azeem-ur-rehman-4bb3b7325" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="mailto:azeemurrehman68@gmail.com" target="_blank">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/AZEEM989" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="tel:+919528061398" target="_blank">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">CONTACT ME</a>
+                        <a href="/AZEEM CV (FED).pdf" target="_blank" class="btn btn-outline">
+                            <i class="fas fa-download"></i> MY RESUME
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="My Portfolio- Images\vecteezy_3d-male-character-presenting-to-the-right_24785849.png" alt="Azeem - 3D Character">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-content fade-in">
+                <div class="hero-image">
+                    <img src="My Portfolio- Images\vecteezy_3d-male-character-sitting-on-a-sofa-and-working-on-a-laptop_24785818.png" alt="Working on laptop">
+                </div>
+
+                <div>
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">What I Do</h2>
+
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">🌐</div>
+                            <div>HTML5</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🎨</div>
+                            <div>CSS3</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">⚡</div>
+                            <div>JavaScript</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">⚛️</div>
+                            <div>React.js</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🗄️</div>
+                            <div>SQL Database</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🐬</div>
+                            <div>MySQL</div>
+                        </div>
+                    </div>
+
+                    <div class="features">
+                        <div class="feature-item">
+                            <div class="feature-icon">👉</div>
+                            <div class="feature-content">
+                                <h3>Responsive Web Design</h3>
+                                <p>I create visually appealing and fully responsive websites that work seamlessly on any device, from desktop to mobile.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">👉</div>
+                            <div class="feature-content">
+                                <h3>User-Friendly Interfaces</h3>
+                                <p>I focus on building intuitive and smooth user experiences, ensuring that visitors can easily navigate and interact with the site.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">👉</div>
+                            <div class="feature-content">
+                                <h3>Continuous Learning & Innovation</h3>
+                                <p>I'm always updating my skills and staying on top of the latest trends in frontend development to build better, smarter websites.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <h2 class="section-title fade-in">Education</h2>
             
+            <div class="education-card fade-in">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
                 
-                <div class="logo"><img src="My Portfolio- Images/full-m2i8d3H7b1m2d3N4.png" alt=""></div>
-                <div class="edu-1">
-                <h2><span class="yellow">Abdul Kalam Technical University</h2></span>
-                <h3>IILM College of Engg. (Gr.Noida)</h3>
-                <h3><span class="yellow">Btech (Biotechnology)</span></h3>
-                <h3>2019-2023</h3>
-                <h3>My Grade: 7.79/10 &nbsp;&nbsp;&nbsp; <a href="My Portfolio- Images/DocScanner 21-Oct-2024 11-29 am.jpg" target="_blank"><button class="seegrade">See my grades</button></a></h3>
-                <div class="ido">
-                    <p><span class="point">&#9755 Bachelor's in Biotechnology</span><br>Graduated in July 2023 with a B.Tech in Biotechnology from IILM College of Engineering and Technology.</p>
-                <p><span class="point">&#9755 Affiliated with AKTU</span><br>Earned my degree from Dr. A.P.J. Abdul Kalam Technical University (AKTU), which shaped my analytical and technical skills.</p>
-                <p><span class="point">&#9755 Transition to Frontend Development</span><br>While my biotech studies honed my problem-solving mindset, my passion led me to explore and specialize in frontend development.</p>
-               
-            </div>
-                <div class="line"></div>
+                <div class="university-name">Abdul Kalam Technical University</div>
+                <div class="college-name">IILM College of Engineering (Greater Noida)</div>
+                <div class="degree">B.Tech (Biotechnology)</div>
+                <div style="color: #d1d5db; margin-bottom: 1rem;">2019-2023</div>
+                
+                <div style="margin-bottom: 2rem;">
+                    <span>My Grade: 7.79/10</span>
+                    <a href="My Portfolio- Images\DocScanner 21-Oct-2024 11-29 am.jpg" target="_blank" class="btn btn-outline" style="margin-left: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">
+                        <i class="fas fa-external-link-alt"></i> See my grades
+                    </a>
+                </div>
+
+                <div class="education-details">
+                    <div class="education-point">
+                        <div class="feature-item">
+                            <div class="feature-icon">👉</div>
+                            <div class="feature-content">
+                                <h4>Bachelor's in Biotechnology</h4>
+                                <p>Graduated in July 2023 with a B.Tech in Biotechnology from IILM College of Engineering and Technology.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-point">
+                        <div class="feature-item">
+                            <div class="feature-icon">👉</div>
+                            <div class="feature-content">
+                                <h4>Affiliated with AKTU</h4>
+                                <p>Earned my degree from Dr. A.P.J. Abdul Kalam Technical University (AKTU), which shaped my analytical and technical skills.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-point">
+                        <div class="feature-item">
+                            <div class="feature-icon">👉</div>
+                            <div class="feature-content">
+                                <h4>Transition to Frontend</h4>
+                                <p>While my biotech studies honed my problem-solving mindset, my passion led me to explore and specialize in frontend development.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- experience section -->
-        <div class="exp">
-         <h1>Experiences</h1>
-         <div class="expCard">
-            <div class="card">
-                <h2 class="Face">Welga Foods Limited</h2>
-                <div class="cardlogo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg8KECYyGfO_GU0LAwKxbH0JAtCWZU_JZxCw&s" alt=""></div>
-                
-                    <h2>Operation executive intern </h2>
-                    <h3>June 2023 - March 2024</h3>
-                    <div class="exdetails">
-                    <p>&#x2022; Manage the supply chain to ensure a consistent flow of raw
-                        materials and finished products.</p>
-                    <p>&#x2022; Monitor and analyze production data to identify trends and
-                            areas for improvement.</p>
-                        <p>&#x2022;  Segregated and labelled products to maintain organised
-                            inventory.</p>
-                    
-                </div>
-            </div>
-            <div class="card">
-                <h2 class="Face">Geeks For Geeks</h2>
-                <div class="cardlogo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaT72qOn89MqfkBD_rHQK0jgJUbhOaLU77Uw&s" alt=""></div>
-                
-                    <h2>Front-end Intern</h2>
-                    <h3>July 2022 - September 2022</h3>
-                    <div class="exdetails">
-                    <p>&#x2022; Initially when i join i just know CSS, Html & Javascript but
-                        after that i leran a lot about frameworks,databases so on.</p>
-                    
-                        <p>&#x2022;  I deploy design with DOM manipulation.</p>
-                        <p>&#x2022;   Designed and implemented website interface for mobile,
-                            desktop and tablets.</p>
-                    
-                </div>
-            </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Experience</h2>
             
-         </div>   
-        </div>
-        <!-- achievement section -->
-        <div class="achieve">
-            <h2>My Achievements</h2>
-            <div class="achievecard">
-            <div class="achcard"><img src="My Portfolio- Images/tinywow_sql_basic certificate (1)_65619058_1.jpg" alt=""></div>
-            <div class="achcard"><img src="My Portfolio- Images/tinywow_sql_intermediate certificate_65619113_1.jpg" alt=""></div>
-            <div class="achcard"><img src="My Portfolio- Images/Geeks for Geeks.jpg" alt=""></div>
-            <div class="achcard"><img src="My Portfolio- Images/123mkv.png" alt=""></div>   
+            <div class="experience-grid">
+                <div class="experience-card fade-in">
+                    <div class="company-header">
+                        <div class="company-logo">🏢</div>
+                        <div class="company-info">
+                            <h3>Welga Foods Limited</h3>
+                            <div class="duration">June 2023 - March 2024</div>
+                        </div>
+                    </div>
+                    
+                    <div class="position">Operation Executive Intern</div>
+                    
+                    <ul class="responsibilities">
+                        <li>Manage the supply chain to ensure a consistent flow of raw materials and finished products.</li>
+                        <li>Monitor and analyze production data to identify trends and areas for improvement.</li>
+                        <li>Segregated and labelled products to maintain organised inventory.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card fade-in">
+                    <div class="company-header">
+                        <div class="company-logo">💻</div>
+                        <div class="company-info">
+                            <h3>GeeksforGeeks</h3>
+                            <div class="duration">July 2022 - September 2022</div>
+                        </div>
+                    </div>
+                    
+                    <div class="position">Front-end Intern</div>
+                    
+                    <ul class="responsibilities">
+                        <li>Initially when I joined I just knew CSS, HTML & JavaScript but after that I learned a lot about frameworks, databases and so on.</li>
+                        <li>I deployed designs with DOM manipulation.</li>
+                        <li>Designed and implemented website interface for mobile, desktop and tablets.</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <!-- reach out to me section  -->
-         <div class="reach">
-            <div class="reachcon">
-              <h2>Reach Out to me!</h2> 
-              <h3>Discuss Projects or just want to say hi? My Inbox is open for all.</h3> 
-              <p>Open for opportunities: Yes</p>
-              <div class="icons">
-                <a href="https://www.linkedin.com/in/azeem-ur-rehman-4bb3b7325" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href="mailto:azeemurrehman68@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://github.com/AZEEM989" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="tel:+919528061398" target="_blank"><i class="fa-solid fa-phone"></i></a>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section achievements">
+        <div class="container">
+            <h2 class="section-title fade-in">My Achievements</h2>
+            
+            <div class="achievements-grid">
+                <div class="achievement-card fade-in">
+                    <div class="achievement-image">🏆</div>
+                    <div class="achievement-title">SQL Basic Certificate</div>
+                </div>
+                
+                <div class="achievement-card fade-in">
+                    <div class="achievement-image">🥇</div>
+                    <div class="achievement-title">SQL Intermediate Certificate</div>
+                </div>
+                
+                <div class="achievement-card fade-in">
+                    <div class="achievement-image">📜</div>
+                    <div class="achievement-title">GeeksforGeeks Certificate</div>
+                </div>
+                
+                <div class="achievement-card fade-in">
+                    <div class="achievement-image">🎖️</div>
+                    <div class="achievement-title">Project Achievement</div>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-content fade-in">
+                <div class="contact-info">
+                    <h2>Reach Out to me!</h2>
+                    <h3>Discuss Projects or just want to say hi? My Inbox is open for all.</h3>
+                    
+                    <div class="availability">
+                        <div class="status-dot"></div>
+                        <div class="availability-text">Open for opportunities: Yes</div>
+                    </div>
+
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/azeem-ur-rehman-4bb3b7325" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="mailto:azeemurrehman68@gmail.com" target="_blank">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/AZEEM989" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="tel:+919528061398" target="_blank">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-image">
+                    <img src="My Portfolio- Images\AZEEMURREHMAN_BTA_24_GO4BDR.jpg" alt="Azeem Ur Rehman">
+                </div>
             </div>
-            <div class="reachimg"><img src="My Portfolio- Images/AZEEMURREHMAN_BTA_24_GO4BDR.jpg" alt=""></div>
-         </div>
-        <div class="footer">Made with ❤️ by AZEEMURREHMAN</div>
-    </div>  
-    
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Made with ❤️ by <span class="highlight">AZEEM UR REHMAN</span></p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </button>
     
     <script src="port.js"></script>
 </body>
