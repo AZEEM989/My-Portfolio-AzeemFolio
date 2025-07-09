@@ -136,6 +136,7 @@
         .hero-text p {
             font-size: 1.1rem;
             color: #d1d5db;
+            text-align: justify;
             margin-bottom: 1.5rem;
         }
 
