@@ -41,6 +41,7 @@
             font-weight: bold;
             color: white;
         }
+     
 
         .logo .arrow {
             color: #a855f7;
@@ -411,6 +412,11 @@
             justify-content: center;
             font-size: 1.5rem;
         }
+        .company-logo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+        }
 
         .company-info h3 {
             color: #a855f7;
@@ -483,6 +489,14 @@
             justify-content: center;
             font-size: 3rem;
             color: white;
+        }
+        .achievement-image img{
+          width: 200px;
+          height: 150px;
+          border-radius: 20px;
+        }
+        .achievement-image img:hover{
+          transform: scale(2);
         }
 
         .achievement-title {
